@@ -1,0 +1,3567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Innovation Class</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Fonte -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/src/css/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar text-center py-2">
+      <p class="mb-0 text-white">
+        Ganhe <span class="highlight-price">R$10,00</span> de desconto no seu
+        primeiro pedido. Utilize o cupom DESCONTO10
+      </p>
+    </div>
+
+    <!-- Header -->
+    <header class="headerfix container-fluid fixed-top">
+      <!-- Navbar Principal -->
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/img/Grupo.png" alt="Logo" />
+          </a>
+
+          <!-- Search -->
+          <div class="search-container">
+            <div class="input-group">
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control rounded pe-5"
+                placeholder="Digite aqui o que você procura"
+              />
+              <button
+                id="searchButton"
+                class="btn position-absolute end-0 translate-middle-y top-50 bg-transparent border-0"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div id="searchResult"></div>
+          </div>
+
+          <!-- USER E CARRINHO -->
+          <div class="icons-container">
+            <a href="#" class="user-btn">
+              <i class="fa-regular fa-user"></i>
+              <span class="ms-1">Olá,<br />Nome cliente!</span>
+            </a>
+            <a href="#" class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Barra de Categorias -->
+      <nav class="navbar-departments">
+        <div class="container">
+          <ul class="ul-container list-unstyled">
+            <!-- Botão Todas as Categorias -->
+            <li class="nav-item dropdown">
+              <button
+                style="white-space: nowrap"
+                class="btn btn-allCategories d-flex align-items-center gap-2"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+                id="btn-all-categories"
+              >
+                <i class="fas fa-bars"></i>
+                <span> <strong> Todas as Categorias </strong> </span>
+              </button>
+              <div class="submenu-depart-dropdown">
+              <ul class="dropdown-menu mega-menu">
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="1"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-3"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="1-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="1-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="2"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="2-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="2-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="3"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-3"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="3-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="3-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="4"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-3"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="4-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="4-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="5"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-3"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="5-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="5-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="6"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-3"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="6-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="6-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="7"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-3"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="7-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="7-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item" data-department-id="8"
+                    >Departamento <i class="fas fa-chevron-right"></i
+                  ></a>
+                  <ul class="dropdown-submenu-content">
+                    <div class="multi-column">
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-1"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-2"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-3"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-4"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-5"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-6"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-7"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-8"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item" data-category-id="8-9"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-10"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-11"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-12"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-13"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-14"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-15"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-16"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-17"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-18"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-19"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-20"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-21"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-22"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-23"
+                          >Categoria</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="dropdown-item"
+                          data-category-id="8-24"
+                          >Categoria</a
+                        >
+                      </li>
+                    </div>
+                    <div class="promo-container">
+                      <img src="/img/promo.png" alt="Promoção" />
+                      <div class="promo-inner-shadow"></div>
+                      <div class="promo-overlay text">
+                        <h5 class="text-white">
+                          Confira os<br />
+                          Produtos<br />
+                          <strong>
+                            Que<br />
+                            acabaram<br />
+                            De chegar
+                          </strong>
+                        </h5>
+                        <button class="btn btn-light btn-sm mt-2">
+                          VER TODOS
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- DEPARTAMENTOS-->
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="1">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="1-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="2">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="2-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="3">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="3-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="4">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="4-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="5">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="5-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="6">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="6-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="7">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="7-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item department-item">
+              <button class="dropdown-item" department-id="8">
+                Departamento
+              </button>
+              <ul class="department-submenu">
+                <p><strong>Departamento</strong></p>
+                <div class="multi-column">
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-1"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-2"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-3"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-4"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-5"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-6"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-7"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-8"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-9"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-10"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-11"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-12"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-13"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-14"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-15"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-16"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-17"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-18"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-19"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-20"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-21"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-22"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-23"
+                      >Categoria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item" data-category-id="8-24"
+                      >Categoria</a
+                    >
+                  </li>
+                </div>
+                <div class="promo-container">
+                  <img src="/img/promo.png" alt="Promoção" />
+                  <div class="promo-inner-shadow"></div>
+                  <div class="promo-overlay text">
+                    <h5 class="text-white">
+                      Confira os<br />
+                      Produtos<br />
+                      <strong>
+                        Que<br />
+                        acabaram<br />
+                        De chegar
+                      </strong>
+                    </h5>
+                    <button class="btn btn-light btn-sm mt-2">VER TODOS</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner Promocional -->
+    <picture class="hero-banner">
+      <!-- Banner Principal -->
+      <source srcset="/img/mobile/Group23778.png" media="(max-width: 390px)" />
+      <img
+        src="/img/banner.png"
+        alt="Banner"
+        class="img-fluid w-100"
+        style="object-fit: cover"
+      />
+    </picture>
+
+    <!-- Carrosséis -->
+    <!-- Seção de Lançamentos -->
+    <section class="launches-section">
+      <div class="launches-header">
+        <h2>Lançamentos</h2>
+        <a href="#" class="see-more">Ver mais</a>
+      </div>
+      <div class="carousel-container">
+        <!-- Seta de navegação para esquerda -->
+        <div class="carousel-arrow prev">
+          <div class="arrow-icon"></div>
+        </div>
+        <div class="product-grid" id="productCarousel1">
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <!-- Próxima seta -->
+        <button class="carousel-arrow next">
+          <div class="arrow-icon"></div>
+        </button>
+      </div>
+    </section>
+    <section class="img-text-div container-fluid">
+      <div class="img-div">
+        <img src="./img/Free_Mug_Mockup_2.png" alt="Caneca Avanti" />
+      </div>
+      <div class="text-avanti desktop-only">
+        <h3 class="title">Lorem Ipsum</h3>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+      </div>
+      <!-- Texto Mobile -->
+      <div class="text-avanti mobile-only">
+        <h3 class="title">Lorem Ipsum</h3>
+        <p>
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+        <p>
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis
+          velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper.
+          Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut
+          fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
+          nisl, vel porttitor augue placerat et.
+        </p>
+      </div>
+    </section>
+    <section class="img-text-div2 container-fluid">
+      <div class="text-avanti2">
+        <h3 class="title2">Lorem Ipsum</h3>
+        <div class="text-1">
+          <img
+            src="./img/Circulo e Icone.png"
+            class="icon-map"
+            alt="Circulo e icon"
+          />
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+        <div class="text-2">
+          <img
+            src="./img/Circulo e Icone.png"
+            class="icon-map"
+            alt="Circulo e icon"
+          />
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+        <div class="text-3">
+          <img
+            src="./img/Circulo e Icone.png"
+            class="icon-map"
+            alt="Circulo e icon"
+          />
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+      </div>
+      <div class="img-div2">
+        <img
+          src="./img/segundo banner.png"
+          class="banner-second"
+          alt="Caneca Avanti"
+        />
+      </div>
+    </section>
+    <section class="img-text-div container-fluid">
+      <div class="img-div">
+        <img src="./img/Free_Mug_Mockup_2.png" alt="Caneca Avanti" />
+      </div>
+      <div class="text-avanti desktop-only">
+        <h3 class="title">Lorem Ipsum</h3>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </p>
+      </div>
+      <!-- Texto Mobile -->
+      <div class="text-avanti mobile-only">
+        <h3 class="title">Lorem Ipsum</h3>
+        <p>
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+        <p>
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis
+          velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper.
+          Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut
+          fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
+          nisl, vel porttitor augue placerat et.
+        </p>
+      </div>
+    </section>
+    <!-- Carousel 2 -->
+    <section class="launches-section carousel-2">
+      <div class="launches-header">
+        <h2>Lançamentos</h2>
+        <a href="#" class="see-more">Ver mais</a>
+      </div>
+      <div class="carousel-container">
+        <!-- Seta de navegação para esquerda -->
+        <div class="carousel-arrow prev">
+          <div class="arrow-icon"></div>
+        </div>
+        <div class="product-grid" id="productCarousel2">
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-info">
+              <span class="new-tag"><span class="text">NOVO</span></span>
+              <img
+                src="./img/imgShirt.png"
+                alt="Camiseta Branca"
+                class="product-image"
+              />
+              <h3 class="product-title">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div class="original-price">R$ 100,00</div>
+                <div class="current-price">R$79,90</div>
+                <div class="discount">10% OFF</div>
+              </div>
+              <div class="installment">
+                Ou em <strong>até 10x de R$ 7,99</strong>
+              </div>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <!-- Adicione mais dots se necessário -->
+        </div>
+        <!-- Próxima seta -->
+        <button class="carousel-arrow next">
+          <div class="arrow-icon"></div>
+        </button>
+      </div>
+    </section>
+    <section class="avanti-background">
+      <div class="background-img-container">
+        <img
+          src="/img/image.png"
+          alt="Avanti Background"
+          class="background-image"
+        />
+        <div class="overlay-content">
+          <h1 class="overlay-text">
+            Entre em contato conosco e verifique a disponibilidade para sua
+            região!
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- Seção de Newsletter -->
+    <section class="newsletter-section">
+      <div class="newsletter-content">
+        <p>
+          <span class="black-bold">Cadastre-se na nossa</span>
+          <span class="blue-bold"> newsletter</span>
+        </p>
+        <div class="newsletter-form">
+          <div class="form-group">
+            <input type="text" placeholder="Digite seu nome" />
+            <input type="email" placeholder="Digite seu e-mail" />
+          </div>
+          <div class="check-group">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="contract" />
+              <span class="checkmark"></span>
+              Estou de acordo com a <u>Política de Privacidade</u>
+            </label>
+          </div>
+          <button type="submit" class="btn-submit">Cadastrar</button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-container">
+      <!-- Parte de Cima (logo e seções) -->
+      <div class="footer-top">
+        <div class="logos-container">
+          <div class="footer-logo">
+            <img src="img/Grupo.png" alt="Logo Avanti" />
+          </div>
+          <div class="media-logo">
+            <img
+              src="/img/footer/instagram.png"
+              class="instagram"
+              alt="instagram"
+            />
+            <img
+              src="/img/footer/facebook.png"
+              class="facebook"
+              alt="facebook"
+            />
+            <img
+              src="/img//footer/Union 632.png"
+              class="YouTube"
+              alt="YouTube"
+            />
+            <img
+              src="/img/footer/logo-tiktok-svgrepo-com.png"
+              class="TikTok"
+              alt="TikTok"
+            />
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="section">
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Nossas Lojas</a></li>
+              <li><a href="#">Privacidade e Segurança</a></li>
+              <li><a href="#">Termos e Condições</a></li>
+            </ul>
+          </div>
+          <div class="section">
+            <h4>Central de Ajuda</h4>
+            <ul>
+              <li><a href="#">Fale Conosco</a></li>
+              <li><a href="#">Frete e Entrega</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Formas de Pagamento</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="section">
+            <h4>Atendimento</h4>
+            <ul>
+              <li>Telefone: (00) 1234-5678</li>
+              <li>Email: exemplo@exemplo.com.br</li>
+              <li>Horário de Atendimento:</li>
+              <li>Segunda a Sexta: 9h - 21h</li>
+              <li>Domingos e Feriados: 11h - 20h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parte de Baixo (ícones de pagamento, selos, etc.) -->
+      <div class="footer-bottom">
+        <div class="payment-methods">
+          <img src="img/footer/amex.png" alt="amex" />
+          <img src="img/footer/União 32.png" alt="Mastercard" />
+          <img src="img/footer/visa.png" alt="Visa" />
+          <img src="img/footer/Caminho 19362.png" alt="Hypercard" />
+          <img src="img/footer/c.png" alt="Elo" />
+          <img src="img/footer/c1.png" alt="Mastercard" />
+          <img src="img/footer/paypal-seeklogo.com.png" alt="PayPal" />
+          <img src="img/footer/União 39.png" alt="Pix" />
+          <img
+            src="img/footer/icon-boleto___ffe2ba684569d29f8e546b10457c48f8.png"
+            alt="Boleto"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Subfooter (ou footer-bottom, disclaimers, etc.) -->
+    <div class="subfooter">
+      <div class="p-div">
+        <p class="p-subfooter-text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+      </div>
+          <div class="div-mobile-text">
+            <p class="text-mobile">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+            </p>
+        </div>
+      <div class="subfooter-logos">
+        <img src="img/subfooter/letsencrypt.png" alt="letsencrypt" />
+        <img
+          src="img/subfooter/vtex-pci-200.png"
+          class="vtex-certi"
+          alt="Vtex Certified"
+        />
+        <img
+          src="img/subfooter/Frame 14.png"
+          class="avanti-log-sub"
+          alt="Avanti"
+        />
+        <img src="img/subfooter/Page-1.png" class="vtex" alt="Vtex" />
+      
+    </div>
+
+   <!-- Scripts -->
+<script type="module" src="/src/js/main.js"></script>
+<script type="module" src="/src/js/menu.js"></script>
+  </body>
+</html>
